@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small helpers */
+.bg-gradient-brand {
+  background: linear-gradient(90deg,#ff6fa3,#7c3aed);
+}

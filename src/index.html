@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AstraWear — Modern Fashion</title>
+  <meta name="description" content="AstraWear — Modern, premium fashion collections and bespoke styling." />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased text-gray-800">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-sm shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-full bg-gradient-to-br from-pink-500 to-violet-600 flex items-center justify-center text-white font-bold">AW</div>
+        <span class="font-bold text-lg">AstraWear</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 font-medium">
+        <a href="#home" class="hover:text-pink-600">Home</a>
+        <a href="#collections" class="hover:text-pink-600">Collections</a>
+        <a href="#services" class="hover:text-pink-600">Services</a>
+        <a href="#lookbook" class="hover:text-pink-600">Lookbook</a>
+        <a href="#shop" class="hover:text-pink-600">Shop</a>
+        <a href="#contact" class="hover:text-pink-600">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#shop" class="bg-pink-600 text-white px-4 py-2 rounded-md font-semibold hover:bg-pink-700">Shop Now</a>
+      </div>
+    <!-- MOBILE MENU BUTTON -->
+  <button id="menu-btn" class="md:hidden text-pink-600 p-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+  </button>
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t shadow-md">
+  <nav class="flex flex-col px-6 py-4 gap-3">
+    <a href="#home" class="py-2 hover:text-pink-600">Home</a>
+    <a href="#collections" class="py-2 hover:text-pink-600">Collections</a>
+    <a href="#services" class="py-2 hover:text-pink-600">Services</a>
+    <a href="#lookbook" class="py-2 hover:text-pink-600">Lookbook</a>
+    <a href="#shop" class="py-2 hover:text-pink-600">Shop</a>
+    <a href="#contact" class="py-2 hover:text-pink-600">Contact</a>
+  </nav>
+  </div>
+ <!-- MOBILE MENU TOGGLE SCRIPT -->
+   <script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+  </script>
+  </header>
+    <!-- HERO SECTION WITH VIDEO BACKGROUND -->
+    <section class="relative w-full h-screen overflow-hidden">
+      <!-- Background Video -->
+      <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover">
+        <source src="video/fashion video.mp4" type="video/mp4">
+      </video>
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <!-- Content -->
+      <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 animate-fadeIn">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
+          Your Fashion Wear
+        </h1>
+        <p class="text-lg md:text-2xl mb-6 max-w-2xl drop-shadow-md">
+          Stylish. Modern. Trendy. Designed for You.
+        </p>
+        <div class="flex flex-col md:flex-row gap-4">
+          <a href="#shop"
+            class="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition shadow-lg">
+            Shop Now
+          </a>
+          <a href="#contact"
+            class="border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition shadow-lg">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Fade Animation -->
+    <style>
+      @keyframes fadeIn {
+        0% {opacity: 0; transform: translateY(20px);}
+        100% {opacity: 1; transform: translateY(0);}
+      }
+      .animate-fadeIn {animation: fadeIn 1.6s ease-out;}
+    </style>
+    <!-- Collections -->
+    <section id="collections" class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-pink-600 mb-4">Featured Collections</h2>
+        <p class="max-w-2xl mx-auto text-gray-600 mb-8">Contemporary pieces designed with precision.</p>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-xl overflow-hidden shadow transform transition duration-300 hover:scale-105 hover:shadow-lg">
+            <img src="assets/0d3f7a408a044539ce15c9cf6460c256.jpg" alt="collection" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold mb-2">Urban Essentials</h3>
+              <p class="text-gray-600 mb-4">Clean lines, everyday luxury.</p>
+              <a href="#shop" class="text-pink-600 font-medium">Shop collection →</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl overflow-hidden shadow transform transition duration-300 hover:scale-105 hover:shadow-lg">
+            <img src="assets/3cbf8f28df3f7795d7d6bf6cbae92aff.jpg" alt="collection" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold mb-2">Evening Edit</h3>
+              <p class="text-gray-600 mb-4">Refined looks for special wear.</p>
+              <a href="#shop" class="text-pink-600 font-medium">Shop collection →</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl overflow-hidden shadow transform transition duration-300 hover:scale-105 hover:shadow-lg">
+            <img src="assets/4f2fc0746632b5aa3fe4481b819a74a3.jpg" alt="collection" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold mb-2">Sustainable Line</h3>
+              <p class="text-gray-600 mb-4">Eco fabrics, elevated design.</p>
+              <a href="#shop" class="text-pink-600 font-medium">Shop collection →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+    <section id="services" class="py-20">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6 text-pink-600">Services</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="p-6 bg-white rounded-xl shadow transform transition duration-300 hover:scale-105 hover:shadow-lg">
+            <h3 class="font-semibold mb-2">Personal Styling</h3>
+            <p class="text-gray-600">One-on-one styling & wardrobe curation.</p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow transform transition duration-300 hover:scale-105 hover:shadow-lg">
+            <h3 class="font-semibold mb-2">Custom Orders</h3>
+            <p class="text-gray-600">Bespoke tailoring for perfect fit.</p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow transform transition duration-300 hover:scale-105 hover:shadow-lg">
+            <h3 class="font-semibold mb-2">Wholesale</h3>
+            <p class="text-gray-600">Partner with us for retail distribution.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Lookbook -->
+    <section id="lookbook" class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-pink-600 mb-6">Lookbook</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <img src="assets/8575d8b9aedf63e5b4ad17825004ff28.jpg" class="rounded-xl object-cover h-64 w-full transform transition duration-300 hover:scale-105 hover:shadow-lg" alt="look">
+          <img src="assets/8ab0df93cae7dc644c769b322bbc332a.jpg" class="rounded-xl object-cover h-64 w-full transform transition duration-300 hover:scale-105 hover:shadow-lg" alt="look">
+          <img src="assets/99bc8b8a51f27f615af270dff3e22a51.jpg" class="rounded-xl object-cover h-64 w-full transform transition duration-300 hover:scale-105 hover:shadow-lg" alt="look">
+        </div>
+      </div>
+    </section>
+    <!-- Shop -->
+    <section id="shop" class="py-20">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-pink-600 mb-6">Bests Wear for you</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-xl shadow p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg">
+            <img src="assets/9ea8c3e6c9f30ec45de978756674ecb0.jpg" alt="product" class="w-full h-56 object-cover rounded-lg mb-4">
+            <h3 class="font-semibold">Astra Tee</h3>
+            <p class="text-green-700 font-bold mb-4">$50</p>
+            <button class="bg-pink-600 text-white px-4 py-2 rounded-md">Add to Cart</button>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg">
+            <img src="assets/a2205aec46715ae32178ceb795ca5312.jpg" alt="product" class="w-full h-56 object-cover rounded-lg mb-4">
+            <h3 class="font-semibold">Luxe Dress</h3>
+            <p class="text-green-700 font-bold mb-4">$80</p>
+            <button class="bg-pink-600 text-white px-4 py-2 rounded-md">Add to Cart</button>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg">
+            <img src="assets/cd157c76bc16fd6318f2b6c70081e8be.jpg" alt="product" class="w-full h-56 object-cover rounded-lg mb-4">
+            <h3 class="font-semibold">Silk Scarf</h3>
+            <p class="text-green-700 font-bold mb-4">$80</p>
+            <button class="bg-pink-600 text-white px-4 py-2 rounded-md">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-pink-600 mb-8">What Our Customers Say</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-xl shadow p-6">
+            <p class="text-gray-600 mb-4">"Absolutely love my new outfit! Quality is top-notch."</p>
+            <p class="font-semibold">— Mariatu, Monrovia</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6">
+            <p class="text-gray-600 mb-4">"Fast delivery and excellent customer service."</p>
+            <p class="font-semibold">— John, Lagos</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6">
+            <p class="text-gray-600 mb-4">"Elegant pieces that everyone compliments me on."</p>
+            <p class="font-semibold">— Aisha, Freetown</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section id="contact" class="bg-gray-100 py-16 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+    <!-- LEFT SIDE -->
+    <div class="flex flex-col justify-center">
+      <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+      <p class="text-gray-700 mb-4">
+        Please fill out the form or message me on WhatsApp.
+      </p>
+      <!-- BLUE WHATSAPP BUTTON -->
+      <a
+        href="https://wa.me/231779359698"
+        target="_blank"
+        class="inline-block bg-pink-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-blue-700 transition">
+        Message Me on WhatsApp
+      </a>
+      <!-- CONTACT NUMBER -->
+      <p class="mt-4 text-gray-800 font-semibold">
+        Contact: +231 77 935 9698
+      </p>
+    </div>
+    <!-- RIGHT SIDE (FORM) -->
+    <div class="bg-white p-6 rounded-xl shadow-md">
+      <form action="https://formspree.io/f/your-id-here" method="POST" class="space-y-4">
+        <div>
+          <label class="block font-semibold mb-1">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            required
+            class="w-full border px-4 py-2 rounded-lg focus:ring focus:ring-blue-300"/>
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Email</label>
+          <input
+            type="email"
+            name="email"
+            required
+            class="w-full border px-4 py-2 rounded-lg focus:ring focus:ring-blue-300"/>
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Message</label>
+          <textarea
+            name="message"
+            rows="5"
+            required
+            class="w-full border px-4 py-2 rounded-lg focus:ring focus:ring-blue-300"></textarea>
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+  </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-200 py-10">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+        <div>
+          <h3 class="font-bold text-lg">AstraWear</h3>
+          <p class="text-sm text-gray-400">Modern fashion collections — ethically made.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Quick Links</h4>
+          <ul class="text-sm space-y-2">
+            <li><a href="#collections" class="hover:text-white">Collections</a></li>
+            <li><a href="#shop" class="hover:text-white">Shop</a></li>
+            <li><a href="#contact" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Contact</h4>
+          <p class="text-sm text-gray-400">Monrovia, Liberia</p>
+          <p class="text-sm text-gray-400">+231 779 359 698</p>
+        </div>
+      </div>
+      <div class="text-center text-sm text-gray-500 mt-6">© 2025 AstraWear. All rights reserved.</div>
+    </footer>
+  </main>
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/231779359698" target="_blank" class="fixed bottom-4 right-4 bg-pink-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M20.52 3.48A11.91 11.91 0 0012 .01 11.9 11.9 0 003.48 3.48 11.9 11.9 0 000 12c0 2.1.55 4.13 1.6 5.9L0 24l6.15-1.55A11.9 11.9 0 0012 24c2.1 0 4.13-.55 5.9-1.6A11.9 11.9 0 0024 12a11.91 11.91 0 00-3.48-8.52zM12 21c-1.78 0-3.5-.46-5-1.32l-.36-.21-3.65.92.98-3.55-.23-.37A9 9 0 113.99 6.32L12 14.32l5.01-5.01a9 9 0 01-5 11.69z"/>
+      <path d="M16.64 13.6c-.27-.14-1.6-.79-1.84-.88-.24-.09-.42-.14-.6.14-.18.27-.7.88-.85 1.06-.15.18-.3.2-.56.07-.27-.14-1.13-.42-2.16-1.33-.8-.71-1.34-1.58-1.5-1.85-.16-.27-.02-.42.12-.56.13-.13.27-.3.4-.45.13-.15.18-.26.27-.43.09-.18
